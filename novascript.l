@@ -36,13 +36,13 @@
 "!"                     { return NOT_OP; }
 "if"                    { return IF_STM; }
 "else"                  { return ELSE_STM; }
-"elif"                  { return ELSE_IF_STM; }
+"else if"               { return ELSE_IF_STM; }
 "for"                   { return FOR_LOOP; }
 "while"                 { return WHILE_LOOP; }
 "IO"                    { return IO_OP; }
 "comment"               { return COMMENT; }
 "print"                 { return PRINT; }
-"RUN"                   { return RUN_PROG; }
+"START"                 { return RUN_PROG; }
 "FINISH"                { return FINISH_PROG; }
 "{"                     { return OPEN_CURLY; }
 "}"                     { return CLOSE_CURLY; }
@@ -50,6 +50,7 @@
 ")"                     { return CLOSE_PARENTHESIS; }
 ";"                     { return SEMICOLON; }
 ","                     { return COMMA; }
+"//"                    { return COMMENT; }
 [a-zA-Z_][a-zA-Z0-9_]*  { return VARIABLE; } // Değişkenler için özel desen
 [ \t]                   /* Boşlukları yoksay */
 .                       { printf("Syntax Error!\n"); }
