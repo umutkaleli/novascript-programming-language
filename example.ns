@@ -1,2 +1,10 @@
-x = 4;
-print(x);
+START
+
+(>> This is a sum func which adds 
+    2 numbers and return an int <<)
+
+func AddNumbers(int a, int b){
+return a + b;
+}
+
+FINISH 
