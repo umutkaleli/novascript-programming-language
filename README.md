@@ -9,8 +9,7 @@
 ```
 <program> ::= <statement_list>
 
-<statement_list> ::= <statement>
-                   | <statement> <statement_list>
+<statement_list> ::= <statement>| <statement> <statement_list>
 
 <statement> ::= <expression_statement>| <declaration_statement>| <if_statement|<loop_statement>| <IO_statement>| <comment_statement>| <print_statement>| <run_finish_statement>
 
