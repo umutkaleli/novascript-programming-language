@@ -5,7 +5,7 @@
 
 variable	[a-zA-Z_$][a-zA-Z0-9_'$]*
 comment  	\*\>(.|\n)*?\<\*
-
+IO              (writeToFile|readFromFile)
 %%
 
 "+"                     { return PLUS_OPERATOR; }
@@ -52,6 +52,7 @@ comment  	\*\>(.|\n)*?\<\*
 ";"                     { return SEMICOLON; }
 ","                     { return COMMA; }
 {comment}		{ return COMMENT; }
+{IO}                    { return IO_OP; }
 {variable}		{ return VARIABLE; }
 [ \t]                   /* Boşlukları yoksay */
 .                       { printf("Syntax Error!\n"); }
