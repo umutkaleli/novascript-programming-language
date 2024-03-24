@@ -48,7 +48,7 @@
 ```
 if                  IF_STM      
 else                ELSE_STM 
-elif                ELSE_IF_STM
+else if             ELSE_IF_STM
 ```
 
 ### I/O
@@ -60,7 +60,7 @@ IO                  IO_OP
 
 ```
 int                  INT_TYPE
-float                return FLOAT_TYPE
+float                FLOAT_TYPE
 string               STRING_TYPE
 boolean              BOOLEAN_TYPE
 char                 CHAR_TYPE
@@ -116,7 +116,26 @@ void              VOID_TYPE
 return            RETURN
 ```
 
+- ## Example Program: Fibonacci
+Example program to write fibonacci numbers in a sequence until a count number.
+```
+START
+	
+int n1 = 0;
+int n2 = 1;
+int n3;
+int i = 2;
+int count = 20;
 
+while(i < count){
+	n3 = n1 + n2;
+	print(" " + n3);
+	n1 = n2;
+	n2 = n3;
+	i = i + 1;
+}
+FINISH	
+```
 
 ### Devam edecek
 
