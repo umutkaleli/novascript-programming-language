@@ -116,6 +116,35 @@ void              VOID_TYPE
 return            RETURN
 ```
 
+- ## Design Desicions
+```
+We wanted to design general-purpose language.
+
+This is a procedural programming language.
+```
+```
+We want not to confuse our users that's why
+
+our language is like any common language but simpler.
+```
+```
+1)For ex, we used 'func' keyword and nothing like public keywords
+
+  So, our users can write code easier
+```
+```func IsEven()```
+instead of
+```public static void isEven()```
+```
+```
+2) We used START and FINISH keywords so that
+   our users can understand where program starts and finishs
+   Readability is much simpler.
+```
+```
+We will keep going for better design.
+```
+
 - ## Example Program: Fibonacci
 Example program to write fibonacci numbers in a sequence until a count number.
 ```
@@ -136,13 +165,4 @@ while(i < count){
 }
 FINISH	
 ```
-
-### Devam edecek
-
-
-
-
-
-
-
 
