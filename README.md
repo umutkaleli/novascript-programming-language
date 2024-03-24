@@ -1,5 +1,48 @@
 #      NovaScript  programming-language
 
+###    Group Members
+####  Umut Kalelioğlu
+####  Arjin Kavalcı
+####  Muhammed Fatih Çınar
+
+# Grammer in Bnf Form
+```
+<program> ::= <statement_list>
+
+<statement_list> ::= <statement>
+                   | <statement> <statement_list>
+
+<statement> ::= <expression_statement>| <declaration_statement>| <if_statement|<loop_statement>| <IO_statement>| <comment_statement>| <print_statement>| <run_finish_statement>
+
+<expression_statement> ::= <expression> SEMICOLON
+
+<declaration_statement> ::= <declaration> SEMICOLON
+
+<if_statement> ::= IF_STM OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS OPEN_CURLY <statement_list> CLOSE_CURLY
+                 | IF_STM OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS OPEN_CURLY <statement_list> CLOSE_CURLY ELSE_STM OPEN_CURLY <statement_list> CLOSE_CURLY
+                 | IF_STM OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS OPEN_CURLY <statement_list> CLOSE_CURLY ELSE_STM IF_STM OPEN_CURLY <statement_list> CLOSE_CURLY
+
+<loop_statement> ::= FOR_LOOP OPEN_PARENTHESIS <expression> SEMICOLON <expression> SEMICOLON <expression> CLOSE_PARENTHESIS OPEN_CURLY <statement_list> CLOSE_CURLY
+                   | WHILE_LOOP OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS OPEN_CURLY <statement_list> CLOSE_CURLY
+
+<IO_statement> ::= IO_OP OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS SEMICOLON
+
+<comment_statement> ::= COMMENT
+
+<print_statement> ::= PRINT OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS SEMICOLON
+
+<run_finish_statement> ::= RUN_PROG SEMICOLON
+                         | FINISH_PROG SEMICOLON
+
+<expression> ::= <term>| <expression> PLUS_OPERATOR <term>| <expression> MINUS_OPERATOR <term>
+
+<term> ::= <factor>| <term> MULTIPLY_OPERATOR <factor>| <term> DIVIDE_OPERATOR <factor>
+
+<factor> ::= VARIABLE| INTEGER| FLOAT| STRING| BOOLEAN| OPEN_PARENTHESIS <expression> CLOSE_PARENTHESIS| NOT_OP <factor>| PLUS_OPERATOR <factor>| MINUS_OPERATOR <factor>
+
+
+```
+
 ## Syntax   
 
 ### Condition 
