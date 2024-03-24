@@ -136,7 +136,6 @@ our language is like any common language but simpler.
 instead of
 ```public static void isEven()```
 ```
-```
 2) We used START and FINISH keywords so that
    our users can understand where program starts and finishs
    Readability is much simpler.
