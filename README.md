@@ -4,6 +4,32 @@
 ####  Umut Kalelioğlu
 ####  Arjin Kavalcı
 ####  Muhammed Fatih Çınar
+# How to Run
+```
+To run our program with a input file:
+
+* make
+
+* make run < example.ns
+
+To clean unnecessary files at the end
+
+* make clean
+
+```
+
+```
+To run our program without a input file:
+
+* make
+
+* make run
+
+To clean unnecessary files at the end
+
+* make clean
+
+```
 
 # Grammer in Bnf Form
 ```
