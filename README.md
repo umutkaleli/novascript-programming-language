@@ -96,6 +96,9 @@ mod                  MOD_OP
 or                OR_OP
 and               AND_OP
 !                 NOT_OP
+=                 ASSIGN_OP
+!=                NOT_EQUA_CHECK
+==                EQUALITYCHECK
 ```
 
 ### Structural Symbols
@@ -107,13 +110,28 @@ and               AND_OP
 ";"               SEMICOLON
 ","               COMMA
 ```
+### Identifier
+```
+[a-zA-Z_][a-zA-Z0-9_]   VARIABLE
+```
+### Loop
+```
+for                   FOR_LOOP
+while                 WHILE_LOOP
+```
 
-
+### Comment
+```
+comment              COMMENT
+```
 ### Functions
 ```
 func              FUNCTION
 void              VOID_TYPE
 return            RETURN
+print             PRINT
+RUN               RUN_PROG
+FINISH            FINISH_PROG
 ```
 
 - ## Design Desicions
