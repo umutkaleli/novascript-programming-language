@@ -1,7 +1,7 @@
 START
 
-(>> This is a sum func which adds 
-    2 numbers and return an int <<)
+*> This is a sum func which adds 
+    2 numbers and return an int <*
 
 func AddNumbers(int a, int b){
 return a + b;
@@ -10,13 +10,10 @@ return a + b;
 FINISH 
 
 START
-
-(>> This program checks if a number is even or not
-	then prints that variable is even or not <<)
 	
 int a = 8;
 
-bool isEven = isEven(a);
+boolean isEven = isEven(a);
 
 if(isEven == true)
 	print("Variable a is even");
@@ -33,7 +30,6 @@ func boolean isEven(int number){
 FINISH
 
 START
-(>> This program prints strings with a string variable <<)
 
 string text = "Hello World!";
 print("Program says: " + text);
@@ -41,9 +37,6 @@ print("Program says: " + text);
 FINISH
 
 START
-
-(>> This program prints fibonacci serie using
-	while loop  <<)
 	
 int n1 = 0;
 int n2 = 1;
@@ -57,4 +50,5 @@ while(i < count){
 	n1 = n2;
 	n2 = n3;
 	i = i + 1;
-}	
+}
+FINISH	
