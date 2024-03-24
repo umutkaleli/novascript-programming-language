@@ -128,6 +128,20 @@ We want not to confuse our users that's why
 our language is like any common language but simpler.
 ```
 ```
+Modularity: The grammar is designed to be modular, with different types of statements
+separated into their own rules (<expression_statement>, <if_statement>, etc.), which
+ enhances readability and maintainability.
+```
+
+```
+Terminators: Each statement or expression is terminated by a semicolon (;),
+ which is a common practice in many programming languages.
+```
+```
+Flexibility: The grammar supports a variety of statements and expressions, including conditionals,
+loops, I/O operations, and arithmetic operations, making it suitable for expressing a wide range of programs.
+```
+```
 1)For ex, we used 'func' keyword and nothing like public keywords
 
   So, our users can write code easier
